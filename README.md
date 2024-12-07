@@ -52,7 +52,7 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
 
 
 **Nota:** a continuacion se crearan los siguientes archivos y carpetas
-´´´
+```rust
   >src                      /* Carpeta
       >lib.cairo            /* archivo
   >test   /*Carpeta         /* carpeta
@@ -62,7 +62,7 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
   >Scarb.toml               /* archivo
   >Snfoundry.toml           /* archivo
   ´´´
-
+```
 
 
 
