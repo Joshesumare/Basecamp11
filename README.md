@@ -49,12 +49,19 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
  `scarb init` al presionar enter se deplagara un menu en el cual deberemos seleccionar 
  > Starknet Foundry (default)
  
-![alt text](image-1.png)
 
 
 
-> **Nota:** a continuacion se crearan los siguientes archivos de acuerdo a la imagen anterior.
-![alt text](image-2.png)
+> **Nota:** a continuacion se crearan los siguientes archivos y carpetas
+  >src                      /* Carpeta
+      >lib.cairo            /* archivo
+  >test   /*Carpeta         /* carpeta
+      >test_contract.cairo  /* archivo
+  >.gitignore               /* archivo
+  >Scarb.lock               /* archivo
+  >Scarb.toml               /* archivo
+  >Snfoundry.toml           /* archivo
+
 
 
 
