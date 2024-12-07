@@ -129,10 +129,13 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
 Cada vez que editemos los archivos debemos digitar los siguientes comandos.
 
 
-   ```rust
+
+
+
+   ``` rust
     scarb fmt   // Verifca el formato del los comandos ingresados
     scarb build // Verifica el codigo,
-    ''
+    '''
 
 
 ### Hints
