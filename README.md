@@ -46,7 +46,7 @@ este repositorio fue creado tomando como base el https://github.com/starknet-edu
 
 - Ahora para iniciar Scarb deberemos abrir el terminal y en el terminal escribir lo siguiente 
  `scarb init` al presionar enter se deplagara un menu en el cual deberemos seleccionar 
- > Starknet Foundry (default)
+   > Starknet Foundry (default)
  
 
 
