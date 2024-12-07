@@ -126,12 +126,13 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
 
     ```
 
-Mas adelante editaremos ambos archivos y en cada edicion debemos procurar reconstruir y reabrir el contenedor ademas a aplicar el codigo [scarb build] para depurar el codigo y tambien el codigo [scarb fmt] que verifica el formato de lo editado.
+Cada vez que editemos los archivos debemos digitar los siguientes comandos.
 
-  ''' rust
-    scarb fmt
-    scarb build
-  '''
+    ```rust
+    scarb fmt   //* Verifca el formato del los comandos ingresados
+    scarb build //* Verifica el codigo
+
+    ```
 
 
 ### Hints
