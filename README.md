@@ -113,6 +113,7 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
         pub mod counter_contract {
         #[storage]
           struct Storage {}
+          }
   ```
   - Archivo llamado the `lib.cairo`, con el siguiente codigo:
 
