@@ -135,7 +135,6 @@ Cada vez que editemos los archivos debemos digitar los siguientes comandos.
    ```rust
     scarb fmt   // Verifca el formato del los comandos ingresados
     scarb build // Verifica el codigo
-
     ```
 
 ### Hints
