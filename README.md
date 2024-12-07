@@ -45,7 +45,15 @@ Posterior a eso y para ejecutar instancias en VSCode, ir al menu superior View -
 
 Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hacer lo mismo solo que modificaremos el comando por el siguinete // Dev Containers: Rebuild //
 
+- Ahora para iniciar Scarb deberemos abrir el terminal y en el terminal escribir lo siguiente 
 
+![alt text](image-1.png)
+
+ `scarb init` al presionar enter se deplagara un menu en el cual deberemos seleccionar 
+ > Starknet Foundry (default)
+ 
+
+> **Note:** Using any other name will disrupt upcoming steps.
 
 
 
