@@ -40,9 +40,9 @@ este repositorio fue creado tomando como base el https://github.com/starknet-edu
   }
   ```
 
-Posterior a eso y para ejecutar instancias en VSCode, ir al menu superior View -> Command Palette y ejecutar el siguiente codigo // Dev Containers: Rebuild and Reopen in Container //
+  Posterior a eso y para ejecutar instancias en VSCode, ir al menu superior View -> Command Palette y ejecutar el siguiente codigo // Dev Containers: Rebuild and Reopen in Container //
 
-Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hacer lo mismo solo que modificaremos el comando por el siguinete // Dev Containers: Rebuild //
+  Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hacer lo mismo solo que modificaremos el comando por el siguinete // Dev Containers: Rebuild //
 
 - Ahora para iniciar Scarb deberemos abrir el terminal y en el terminal escribir lo siguiente 
  `scarb init` al presionar enter se deplagara un menu en el cual deberemos seleccionar 
