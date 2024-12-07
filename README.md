@@ -70,8 +70,10 @@ A continuacion se crearan los siguientes archivos y carpetas
 
   - Forma 1: 
     En el archivo "Scarb.toml" agregar en el apartado [dependencies] lo siguiente. 
+     ```rust
       > [Dependencies]
       openzeppelin_token = "0.20.0"
+      ```
 
   - Forma 2:
     En la terminal digitamos:
