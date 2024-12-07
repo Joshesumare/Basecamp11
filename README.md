@@ -73,10 +73,11 @@ A continuacion se crearan los siguientes archivos y carpetas
       > openzeppelin_token = "0.20.0"
 
   - Forma 2:
-    En la terminal digitamos
-      <scarb add openzeppelin@0.20.0>
-  
-    Al presionar enter, el programa descargara los archivos necesarios y ademas alñadira la liniea de codigo señalada anteriormente al archivo "Scarb.toml"
+    En la terminal digitamos:
+    ```rust
+          <scarb add openzeppelin@0.20.0>
+    ```
+    Al presionar enter, el programa descargara los archivos necesarios y ademas añadira la linea de codigo señalada anteriormente al archivo "Scarb.toml"
 
 
 ## Modificacion archivo .devcointainer.json
