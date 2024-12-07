@@ -55,7 +55,7 @@ A continuacion se crearan los siguientes archivos y carpetas
 
   > src                     /* Carpeta
       >lib.cairo            /* archivo
-  >test   /*Carpeta         /* carpeta
+  >test                     /* carpeta
       >test_contract.cairo  /* archivo
   >.gitignore               /* archivo
   >Scarb.lock               /* archivo
@@ -69,7 +69,7 @@ A continuacion se crearan los siguientes archivos y carpetas
 - Ahora para instalar las dependencias de openzeppelin lo podemos hacer de dos formas
 
   Forma 1: 
-  En el archivo "Scarb.toml" agregar lo siguiente, debe ser en el apartado [dependencies]
+  En el archivo "Scarb.toml" agregar en el apartado [dependencies] lo siguiente. 
   > openzeppelin_token = "0.20.0"
 
   Forma 2:
@@ -80,13 +80,31 @@ A continuacion se crearan los siguientes archivos y carpetas
   Al presionar enter, el programa descargara los archivos necesarios y ademas alñadira la liniea de codigo señalada anteriormente al archivo "Scarb.toml"
 
 
-## Step 1
+## modificacion archivo .devcointainer.json
 
-Switch to the `step1` branch to enable the verification tests:
+Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos el siguiente codigo:
 
-```bash
-git checkout -b step1 origin/step1
-```
+  ```rust
+  { 
+    "name": "dev",
+    "image": "starknetfoundation/starknet-dev:2.9.1"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Starware.cairo1",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}
+  ```
+
+> **Note:** cada vez que modifiquemos algun archivo con instancias deberemos reconstruir el contenedor // Dev Containers: Rebuild //.
+
+
+
+
+
 
 ### Goal
 
