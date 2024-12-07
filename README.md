@@ -42,6 +42,7 @@ este repositorio fue creado desde 0tomando como base el https://github.com/stark
   ```
 
 Posterior a eso y para ejecutar instancias en VSCode, ir al menu superior View -> Command Palette y ejecutar el siguiente codigo // Dev Containers: Rebuild and Reopen in Container //
+
 Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hacer lo mismo solo que modificaremos el comando por el siguinete // Dev Containers: Rebuild //
 
 
