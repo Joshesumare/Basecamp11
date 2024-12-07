@@ -53,6 +53,8 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
 
 
 
+> **Nota:** a continuacion se crearan los siguientes archivos.
+![alt text](image-2.png)
 
 
 
@@ -67,12 +69,6 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
 
 
 
-
-
-
-
-
-> **Note:** Using any other name will disrupt upcoming steps.
 
 
 
