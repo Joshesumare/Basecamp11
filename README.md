@@ -8,7 +8,7 @@ Usar [Cairo book](https://book.cairo-lang.org/ch00-00-introduction.html) and the
 
 ## Setup
 
-este repositorio fue creado desde 0tomando como base el https://github.com/starknet-edu/basecamp11-app, puedes clonarlo total o parcial sin problemas:
+este repositorio fue creado tomando como base el https://github.com/starknet-edu/basecamp11-app, puedes clonarlo total o parcial sin problemas:
 
 
 ### instalacion opcion 1: Without Docker
@@ -31,8 +31,7 @@ este repositorio fue creado desde 0tomando como base el https://github.com/stark
 ## Instalacion de dependencias 
 
 
-- Para crear un proyecto con `Scarb`, tendremos que crar `basecampX` donde X es el campamento al cual pertenece
-- Craeremos un archivo llamado `.devcontainer.json` en el root, y le escribiremos el siguiente codigo:
+- Para crear un proyecto con `Scarb`, tendremos que crear archivo llamado `.devcontainer.json` en el root, y le escribiremos el siguiente codigo:
 
   ```rust
   {
@@ -62,40 +61,23 @@ A continuacion se crearan los siguientes archivos y carpetas
   >Scarb.lock               /* archivo
   >Scarb.toml               /* archivo
   >Snfoundry.toml           /* archivo
-  ´´´
 ```
 
 
-## dependencias Openzeppelin.
+## Dependencias Openzeppelin.
 
-- Ahora para instalar las dependencias de openzeppelin lo podemos g¿hacer de dos formas
+- Ahora para instalar las dependencias de openzeppelin lo podemos hacer de dos formas
 
   Forma 1: 
   En el archivo "Scarb.toml" agregar lo siguiente, debe ser en el apartado [dependencies]
-  [dependencies]
   > openzeppelin_token = "0.20.0"
 
   Forma 2:
   En la terminal digitamos 
 
   <scarb add openzeppelin@0.20.0>
+  
   Al presionar enter, el programa descargara los archivos necesarios y ademas alñadira la liniea de codigo señalada anteriormente al archivo "Scarb.toml"
-
-
-
-
-
-
-
-
-
-- In the `lib.cairo` file remove the code and define the `counter` module
-
-  ```rust
-  pub mod counter;
-  ```
-
-> **Note:** Using any other name will disrupt upcoming steps.
 
 
 ## Step 1
