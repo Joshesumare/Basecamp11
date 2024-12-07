@@ -121,7 +121,12 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
     pub mod counter;
     ```
 
-> **Note:** Using any other name will disrupt upcoming steps.
+> **Nota:** Mas adelante editaremos ambos archivos y en cada edicion debemos procurar reconstruir y reabrir el contenedor ademas a aplicar el codico scarb build para depurar el codigo y tambien el codigo scarb fmt que verifica el formato de lo editado.
+   ```rust
+    scarb fmt
+    scarb build
+    ```
+
 
 ### Verification
 
