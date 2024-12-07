@@ -80,14 +80,14 @@ A continuacion se crearan los siguientes archivos y carpetas
   Al presionar enter, el programa descargara los archivos necesarios y ademas alñadira la liniea de codigo señalada anteriormente al archivo "Scarb.toml"
 
 
-## modificacion archivo .devcointainer.json
+## Modificacion archivo .devcointainer.json
 
 Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos el siguiente codigo:
 
   ```rust
   { 
-    "name": "dev",
-    "image": "starknetfoundation/starknet-dev:2.9.1"
+  //  "name": "dev",
+  //  "image": "starknetfoundation/starknet-dev:2.9.1"
     "customizations": {
         "vscode": {
             "extensions": [
@@ -99,6 +99,8 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
 }
   ```
 
+
+> **Note:** Lo que se encuentra demarcado //* es lo que ya habiamos incorporado.
 > **Note:** cada vez que modifiquemos algun archivo con instancias deberemos reconstruir el contenedor // Dev Containers: Rebuild //.
 
 
