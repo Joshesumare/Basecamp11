@@ -51,9 +51,10 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
  
 
 
-**Nota:** a continuacion se crearan los siguientes archivos y carpetas
-```rust
-  >src                      /* Carpeta
+A continuacion se crearan los siguientes archivos y carpetas
+```
+
+  > src                     /* Carpeta
       >lib.cairo            /* archivo
   >test   /*Carpeta         /* carpeta
       >test_contract.cairo  /* archivo
