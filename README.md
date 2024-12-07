@@ -36,7 +36,7 @@ este repositorio fue creado tomando como base el https://github.com/starknet-edu
   ```rust
   {
       "name": "dev",
-      "image": "starknetfoundation/starknet-dev:2.9.1"
+      "image": "starknetfoundation/starknet-dev:2.9.1",
   }
   ```
 
@@ -90,7 +90,7 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
   ```rust
   { 
   //  "name": "dev",
-  //  "image": "starknetfoundation/starknet-dev:2.9.1"
+  //  "image": "starknetfoundation/starknet-dev:2.9.1",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -152,6 +152,16 @@ Implement the constructor function to initialize an input number and store a var
 - Store a variable named `counter` as `u32` type in the `Storage` struct.
 - Implement the constructor function that initializes the `counter` variable with a given input value.
 - The input variable of the constructor function should be named `initial_value`
+
+```rust
+#[starknet::contract]
+pub mod counter_contract {
+    #[storage]
+    struct Storage {
+        pub counter:u32, //Establece la variable como u32, numero y la almacena
+    }
+}
+```
 
 ### Verification
 
