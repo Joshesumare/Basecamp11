@@ -123,10 +123,10 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
 
     ```rust
     pub mod counter;
-    
+
     ```
 
-> **Nota:** Mas adelante editaremos ambos archivos y en cada edicion debemos procurar reconstruir y reabrir el contenedor ademas a aplicar el codico scarb build para depurar el codigo y tambien el codigo scarb fmt que verifica el formato de lo editado.
+Mas adelante editaremos ambos archivos y en cada edicion debemos procurar reconstruir y reabrir el contenedor ademas a aplicar el codigo {scarb build} para depurar el codigo y tambien el codigo [scarb fmt] que verifica el formato de lo editado.
 
    ```rust
 
