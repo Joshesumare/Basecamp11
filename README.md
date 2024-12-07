@@ -100,8 +100,8 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
   ```
 
 
-> **Note:** Lo que se encuentra demarcado //* es lo que ya habiamos incorporado.
-> **Note:** cada vez que modifiquemos algun archivo con instancias deberemos reconstruir el contenedor // Dev Containers: Rebuild //.
+**Note:** Lo que se encuentra demarcado es lo que ya habiamos incorporado.
+**Note:** cada vez que modifiquemos algun archivo con instancias deberemos reconstruir el contenedor // Dev Containers: Rebuild //.
 
 
 
