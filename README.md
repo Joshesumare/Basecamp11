@@ -53,7 +53,7 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
 
 
 
-> **Nota:** a continuacion se crearan los siguientes archivos de acuerdo a la imagen siguiente.
+> **Nota:** a continuacion se crearan los siguientes archivos de acuerdo a la imagen anterior.
 ![alt text](image-2.png)
 
 
