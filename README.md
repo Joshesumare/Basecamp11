@@ -90,7 +90,7 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
     "customizations": {
         "vscode": {
             "extensions": [
-                "Starware.cairo1",
+                "Starkware.cairo1",
                 "tamasfe.even-better-toml"
             ]
         }
@@ -104,29 +104,21 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
 
 
 
+### Creacion de archivos base
 
-
-
-### Goal
-
-Initialize the project structure within the cloned repository by using the `Scarb` package manager and enable compilation of Starknet Contracts.
-
-### Requirements
-
-- When initializing the project with `Scarb`, name the package as `basecampX` donde X es el campamento al cual pertenece
-- Create a new Cairo file under the `src` directory named `counter.cairo`, and add the following starting code:
-  ```rust
-  #[starknet::contract]
-  pub mod counter_contract {
-      #[storage]
-      struct Storage {}
-  }
+- crearemos dos archivos en la carpeta "src" 
+  - Archivo llamado `counter.cairo`, con el siguiente codigo:
+    ```rust
+      #[starknet::contract]
+        pub mod counter_contract {
+        #[storage]
+          struct Storage {}
   ```
-- In the `lib.cairo` file remove the code and define the `counter` module
+  - Archivo llamado the `lib.cairo`, con el siguiente codigo:
 
-  ```rust
-  pub mod counter;
-  ```
+    ```rust
+    pub mod counter;
+    ```
 
 > **Note:** Using any other name will disrupt upcoming steps.
 
