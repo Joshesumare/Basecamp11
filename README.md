@@ -131,37 +131,9 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
             scarb fmt   // Verifca el formato del los comandos ingresados
             scarb build // Verifica el codigo,
 
+### Verificacion
 
-### Hints
-
-- Check out the `scarb init` command to initialize a project. In case you want to initialize the project with a specific name, you can use the `scarb init --name PACKAGE_NAME` command.
-- Refer to the [Cheat Sheet](https://docs.swmansion.com/scarb/docs/cheatsheet.html) for essential `Scarb` commands
-- To enable Starknet Contract compilation:
-  - Target `starknet-contract`.
-  - Specify the Cairo version in the `Scarb.toml`.
-  - Learn more in the [Starknet Contract Target](https://docs.swmansion.com/scarb/docs/extensions/starknet/contract-target.html) documentation.
-
-## Step 2
-
-Switch to the `step2` branch to enable the verification tests:
-
-```bash
-git checkout -b step2 origin/step2
-```
-
-### Goal
-
-Add `snforge` as a dependency within your `Scarb.toml` file to allow execution of tests with Starknet Foundry.
-
-### Requirements
-
-- In your `Scarb.toml`, declare the `snforge_std` package as your project dependency and enable `casm` contract class generation
-- In your `Scarb.toml`, define a script named `test` to be able to run `snforge test` command
-- In your `Scarb.toml`, set your `edition` to target `2023_01`
-
-### Verification
-
-When completed, execute the test suite to verify you've met all the requirements for this section.
+Una vez completados los pasos anteriores, executaremos el tester de la suit para verficar que todos los requerimientos esten listos para comenzar a crear nuestro codigo.
 
 ```bash
 scarb test
@@ -169,18 +141,7 @@ scarb test
 
 ### Hints
 
-- Specify the version of Starknet Foundry that the project currently uses
-- Refer to the [Starknet Foundry Documention](https://foundry-rs.github.io/starknet-foundry/getting-started/first-steps.html#using-snforge-with-existing-scarb-projects) for more information.
-- Refer to the [Scarb Running Scripts Documentation](https://docs.swmansion.com/scarb/docs/reference/scripts.html#running-scripts) for more information.
-- `edition = "2024_07"` is a default configuration from Scarb that targets the July 2024 version of Cairo prelude. However, in our workshop we will work with `2023_01` for simplicity. Refer to the [Prelude Documentation](https://book.cairo-lang.org/appendix-04-cairo-prelude.html#prelude) for more information.
-
 ## Step 3
-
-Switch to the `step3` branch to enable the verification tests:
-
-```bash
-git checkout -b step3 origin/step3
-```
 
 ### Goal
 
