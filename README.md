@@ -51,8 +51,8 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
  
 
 
-
-> **Nota:** a continuacion se crearan los siguientes archivos y carpetas
+**Nota:** a continuacion se crearan los siguientes archivos y carpetas
+´´´
   >src                      /* Carpeta
       >lib.cairo            /* archivo
   >test   /*Carpeta         /* carpeta
@@ -61,6 +61,7 @@ Desde ahora cada vez que modifiquemos algun archivo con instancias deberemos hac
   >Scarb.lock               /* archivo
   >Scarb.toml               /* archivo
   >Snfoundry.toml           /* archivo
+  ´´´
 
 
 
