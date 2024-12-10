@@ -94,7 +94,7 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
     "customizations": {
         "vscode": {
             "extensions": [
-                "Starkware.cairo1",
+                "StarkWare.cairo1",
                 "tamasfe.even-better-toml"
             ]
         }
