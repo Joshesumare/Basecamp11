@@ -72,13 +72,13 @@ A continuacion se crearan los siguientes archivos y carpetas
     En el archivo "Scarb.toml" agregar en el apartado [dependencies] lo siguiente. 
      ```rust
       > [Dependencies]
-      openzeppelin_token = "0.20.0"
+      openzeppelin_access = "0.19.0"
       ```
 
   - Forma 2:
     En la terminal digitamos:
     ```rust
-          <scarb add openzeppelin@0.20.0>
+          <scarb add openzeppelin_acces@0.19.0>
     ```
     Al presionar enter, el programa descargara los archivos necesarios y ademas añadira la linea de codigo señalada anteriormente al archivo "Scarb.toml"
 
