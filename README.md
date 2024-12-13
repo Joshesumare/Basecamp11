@@ -72,14 +72,14 @@ A continuacion se crearan los siguientes archivos y carpetas
     En el archivo "Scarb.toml" agregar en el apartado [dependencies] lo siguiente. 
      ```rust
       > [Dependencies]
-      openzeppelin_access = "0.19.0"
+      openzeppelin_access = "0.20.0"
       starknet = "2.9.1" // Esto ya estaba configurado, pero debemos revisar que este de acuerdo a la version del archivo '.devcontainer.json' 
       ```
 
   - Forma 2:
     En la terminal digitamos:
     ```rust
-          <scarb add openzeppelin_acces@0.19.0>
+          <scarb add openzeppelin_acces@0.20.0>
     ```
     Al presionar enter, el programa descargara los archivos necesarios y ademas añadira la linea de codigo señalada anteriormente al archivo "Scarb.toml"
 
@@ -104,8 +104,8 @@ Abriremos el archivo llamado `.devcontainer.json` en el root, y le añadiremos e
   ```
 
 
-- **Note:** Lo que se encuentra demarcado es lo que ya habiamos incorporado.
-- **Note:** cada vez que modifiquemos algun archivo con instancias deberemos reconstruir el contenedor // Dev Containers: Rebuild //.
+- **Nota:** Lo que se encuentra demarcado es lo que ya habiamos incorporado.
+- **Nota:** cada vez que modifiquemos algun archivo con instancias deberemos reconstruir el contenedor // Dev Containers: Rebuild //.
 
 
 
@@ -141,8 +141,110 @@ scarb test
 ```
 
 ### Hints
+ +++---- continuara -----+++
+## Firmadores 
 
-## Step 3
+#Paso 1
+En la terminal digitamos:
+    ```rust
+          starkli signer keystore new keystore.json
+    ```
+    Al presionar enter, el programa nos solicitara la creacion de un password, luego creara un archivo denominado "keystore.json"
+
+#Paso 2
+En la terminal digitamos:
+    ```rust
+          starkli account oz init account.json --keystore keystore.json
+    ```
+    Al presionar enter, el programa nos solicitara introducir el password creado en el paso anterior y creara un archivo llamado account.json"
+
+#Paso 3
+La terminal nos indicara la direccion de la cuenta creada que desplagara el contrato, la imprime en amarillo y comienza por 0x., a esa cuenta debemos enviar eth para gas.
+
+#Paso 4
+Copiamos el comando que nos indico la terminal debajo de la direccion a la cual enviamos el gas, por lo general el comado es el siguiente {starkli account deploy account.json} y añadimos lo siguiente --keystore keystore.json, entonces elcomandoajecutar seriaelsiguiente:
+
+    ```rust
+          starkli account deploy account.json --keystore keystore.json
+    ```
+
+#Paso 5
+El terminal nos indicara una [ADVERTENCIA] y nos solicitara la confirmacion, la cual deberemos indicar al colocar el password de la cuenta creada anteriormente.
+
+#Paso 6
+Posterior a introducir el pasword, nos indicara el mensaje que avisa cuanto gas se necesita para desplegar el contrato y la cuanta a la cual se debe depositar el eth necesario, nosotros ya hemos enviado el gas, razon pormla cual daremos en siguiente, [el mensaje es el siguiente].
+
+    ```rust
+The estimated account deployment fee is 0.000005574034060363 ETH. However, to avoid failure, fund at least:
+    0.000008361051090544 ETH
+to the following address:
+    0x010708da4a014a5c65f4182f5eb34b58b3bbbf6dabfdf0f43a2c30891b4f5e75
+Press [ENTER] once you've funded the address.
+```
+
+> **Nota:** La terminal nos indicara cuando la transaccion sea confirmada y nos indicara el ID de la Transaccion. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Goal
 

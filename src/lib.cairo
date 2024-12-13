@@ -47,7 +47,7 @@ pub mod Counter{
         counter: u32,
     }
     pub mod Errors {
-        pub const NEGATIVE_COUNTER:     felt252 = 'countercan\'t be negative';
+        pub const NEGATIVE_COUNTER:     felt252 = 'counter can\'t be negative';
     }
 
     #[constructor]
