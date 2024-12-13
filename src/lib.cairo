@@ -1,7 +1,7 @@
 #[starknet::interface]
 pub trait ICounter<TContractState> {
     fn consultar(self: @TContractState) -> u32;
-    fn sumar(ref self: TContractState);
+    fn sumar_uno(ref self: TContractState);
     fn restar(ref self: TContractState);
     fn borrar(ref self: TContractState);
 }
@@ -60,7 +60,7 @@ mod Counter {
             self.counter.read()
         }
 
-        fn sumar(ref self: ContractState) {
+        fn sumar_uno(ref self: ContractState) {
             let old_counter = self.counter.read();
             let new_counter = old_counter + 1;
             self.counter.write(new_counter);
@@ -69,7 +69,7 @@ mod Counter {
 
         fn restar(ref self: ContractState) {
             let old_counter = self.counter.read();
-            assert(old_counter > 0, 'error, no puede ser negativo');
+            assert(old_counter > 0, 'error, ya valgo 0 :\'(');
                 let new_counter = old_counter - 1;
                 self.counter.write(new_counter);
                 self.emit(CounterDecreased { counter: new_counter });
