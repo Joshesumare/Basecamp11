@@ -1,33 +1,5 @@
 # Basecamp11
 
-This repository is create for study cairo in spanish
-Este repositorio esta creado para comprender las estructuras de Cairo
-
-
-Usar [Cairo book](https://book.cairo-lang.org/ch00-00-introduction.html) and the [Starknet docs](https://docs.starknet.io/documentation/) como referencia.
-
-## Setup
-
-este repositorio fue creado tomando como base el https://github.com/starknet-edu/basecamp11-app, puedes clonarlo total o parcial sin problemas:
-
-
-### instalacion opcion 1: Without Docker
-
-1. Install `asdf` ([instructions](https://asdf-vm.com/guide/getting-started.html))
-2. Install Scarb `2.8.5` via `asdf` ([instructions](https://docs.swmansion.com/scarb/download.html#install-via-asdf))
-3. Install Starknet Foundry `0.33.0` via `asdf` ([instructions](https://foundry-rs.github.io/starknet-foundry/getting-started/installation.html))
-4. Install Rust via ([instructions](https://www.rust-lang.org/tools/install))
-5. Install the Cairo 1.0 extension for VSCode ([marketplace](https://foundry-rs.github.io/starknet-foundry/getting-started/installation.html#installation-via-asdf))
-
-
-### instalacion opcion 2: With Docker
-
-4. Make sure Docker is installed and running
-5. Install the Dev Containers extension for VSCode ([marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers))
-6. Launch an instance of VSCode inside of the container by going to **View -> Command Palette -> Dev Containers: Rebuild and Reopen in Container**
-
-> **Note:** All the commands shown from this point on will assume that you are using the integrated terminal of a VSCode instance running inside the container. If you want to run the tests on a different terminal you'll need to use the command `docker compose run test`.
-
 ## Instalacion de dependencias 
 
 
