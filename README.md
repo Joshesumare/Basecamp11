@@ -216,22 +216,19 @@ Posteriormente debemos aplicar en la ventana de comandos [scarb Build] presionar
 ```rust
 starkli deploy 0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525 "hash de compilacion" 4 "valor inicial del counter" 0x074e65B87938f1f497947B89f293E142b79ECb8b7b93202C1040bECE91D621F3 "direccion del owner"--account account.json --keystore keystore.json "Comandos con informacion del implementador"
 ```
-**Nota** Lo que esta "entrecomillas" es solo etxto descriptivo
+**Nota** Lo que esta "entrecomillas" es texto descriptivo
 
 Desplegara la siguiente informacion de la compilacion.
 
     ```rust
 Enter keystore password: 
-Sierra compiler version not specified. Attempting to automatically decide version to use...
-Network detected: sepolia. Using the default compiler version for this network: 2.9.1. Use the --compiler-version flag to choose a different version.
-Declaring Cairo 1 class: 0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525
-Compiling Sierra class to CASM with compiler version 2.9.1...
-CASM class hash: 0x03db3e89e5c9a529cd8d3f20f9a7749ceaa4048f3970bc748a19512965717a35
-Contract declaration transaction: 0x05a88a56fe675622fd29b772ad380f5ab5186aa37722ce805273c206d4cd36a9
-Class hash declared:
-0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525.
+Deploying class 0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525 "Class desplegado" with salt 0x064b5ae6562e89a0a341077444fb1aeac057a10ff7edb9bca502f8a4eb96a132...
+The contract will be deployed at address 0x078879b20f1641703548ab0abf49fd765e3cdb8cc29b660553bd684841701417 
+Contract deployment transaction: 0x02f63a994c1b3f029bdb012b4f02034bd902a8a969bdddf8e094cba091b8c0cc
+Contract deployed:
+0x078879b20f1641703548ab0abf49fd765e3cdb8cc29b660553bd684841701417.
 ```
-
+**Nota** Lo que esta "entrecomillas" es texto descriptivo
 
 
 
