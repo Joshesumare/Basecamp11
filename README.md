@@ -184,6 +184,59 @@ Press [ENTER] once you've funded the address.
 
 > **Nota:** La terminal nos indicara cuando la transaccion sea confirmada y nos indicara el ID de la Transaccion. 
 
+Paso 7 Compilar
+Posteriormente debemos aplicar en la ventana de comandos [scarb Build] presionar [ENTER] e introducir el siguiente comando: 
+
+```rust
+starkli declare target/dev/basecamp11_Counter.contract_class.json --account account.json --keystore keystore.json
+```
+Desplegara la siguiente informacion de la compilacion.
+
+    ```rust
+Enter keystore password: 
+Sierra compiler version not specified. Attempting to automatically decide version to use...
+Network detected: sepolia. Using the default compiler version for this network: 2.9.1. Use the --compiler-version flag to choose a different version.
+Declaring Cairo 1 class: 0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525
+Compiling Sierra class to CASM with compiler version 2.9.1...
+CASM class hash: 0x03db3e89e5c9a529cd8d3f20f9a7749ceaa4048f3970bc748a19512965717a35
+Contract declaration transaction: 0x05a88a56fe675622fd29b772ad380f5ab5186aa37722ce805273c206d4cd36a9
+Class hash declared:
+0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525.
+```
+
+> **Nota:** La terminal nos indicara cuando la transaccion sea confirmada y nos indicara el Hash de Storage. 
+
+
+
+
+
+# Desplegar 
+Posteriormente debemos aplicar en la ventana de comandos [scarb Build] presionar [ENTER] e introducir el siguiente comando: 
+
+```rust
+starkli deploy 0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525 "hash de compilacion" 4 "valor inicial del counter" 0x074e65B87938f1f497947B89f293E142b79ECb8b7b93202C1040bECE91D621F3 "direccion del owner"--account account.json --keystore keystore.json "Comandos con informacion del implementador"
+```
+**Nota** Lo que esta "entrecomillas" es solo etxto descriptivo
+
+Desplegara la siguiente informacion de la compilacion.
+
+    ```rust
+Enter keystore password: 
+Sierra compiler version not specified. Attempting to automatically decide version to use...
+Network detected: sepolia. Using the default compiler version for this network: 2.9.1. Use the --compiler-version flag to choose a different version.
+Declaring Cairo 1 class: 0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525
+Compiling Sierra class to CASM with compiler version 2.9.1...
+CASM class hash: 0x03db3e89e5c9a529cd8d3f20f9a7749ceaa4048f3970bc748a19512965717a35
+Contract declaration transaction: 0x05a88a56fe675622fd29b772ad380f5ab5186aa37722ce805273c206d4cd36a9
+Class hash declared:
+0x0748d189a79b38711b357472c6ebffadda3e294f99e79e5b0eb2b229988b1525.
+```
+
+
+
+
+
+
 
 
 
